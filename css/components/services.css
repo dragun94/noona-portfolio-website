@@ -1,0 +1,47 @@
+.services-section { background: linear-gradient(#edf0f9ec, #e8edf9f0), url('../../assets/workspace.svg') center / cover; }
+.services-grid { max-width: 850px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.service-card { display: flex; gap: 18px; padding: 27px; background: var(--white); box-shadow: 0 5px 20px #242b3e04; transition: transform .2s, box-shadow .2s; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px #242b3e0b; }
+.service-icon { display: flex; justify-content: center; align-items: center; width: 44px; height: 49px; flex-shrink: 0; color: var(--yellow); background: var(--navy); }
+.service-icon .icon { width: 25px; height: 25px; }
+.service-card h3 { font-size: 16px; margin: 1px 0 9px; }
+.service-card p { font-size: 12px; line-height: 1.75; }
+.solutions-section { background: #fafbfe; }
+.solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.solution-card { background: var(--lavender); }
+.solution-image { position: relative; height: 215px; overflow: hidden; }
+.solution-image img { height: 100%; transition: transform .5s; }
+.solution-card:hover .solution-image img { transform: scale(1.045); }
+.solution-image > span { position: absolute; bottom: 0; left: 22px; padding: 5px 13px; background: var(--yellow); color: var(--navy); font-size: 12px; font-weight: 750; }
+.solution-body { padding: 27px 25px; }
+.solution-body h3 { font-size: 20px; margin-bottom: 12px; }
+.solution-body > p { font-size: 13px; }
+.solution-body .check-list { font-size: 11px; margin: 17px 0 24px; }
+.solution-body .text-link { font-size: 11px; }
+.process-section { position: relative; background: linear-gradient(#1b2232d9, #1b2232d9), url('../../assets/workspace.svg') center / cover; color: var(--white); }
+.process-section .section-heading p { color: #d0d4df; }
+.process-section .heading-dot { color: var(--yellow); }
+.process-section .heading-line { background: var(--white); }
+.process-grid { max-width: 830px; margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.process-card { position: relative; overflow: hidden; background: var(--white); color: var(--ink); text-align: center; padding: 28px 35px; }
+.process-card > .icon { color: #a57500; width: 26px; height: 26px; margin-bottom: 8px; }
+.process-number { position: absolute; left: 17px; top: 10px; font-size: 37px; color: #e8ebf1; font-weight: 800; letter-spacing: -1px; }
+.process-card h3 { font-size: 19px; }
+.process-step { color: #747986; font-size: 9px; letter-spacing: 1.5px; }
+.process-card p { margin-top: 13px; font-size: 12px; }
+.philosophy-section { padding-bottom: 45px; }
+.philosophy-section .section-heading { margin-bottom: 22px; }
+.philosophy { max-width: 700px; margin: auto; text-align: center; }
+.quote-icon { width: 30px; height: 30px; color: #c38d0a; fill: #c38d0a; stroke: none; }
+.philosophy blockquote { color: #555b68; margin: 18px 0 24px; font-size: 17px; font-style: italic; line-height: 1.85; }
+.creator { display: inline-flex; gap: 13px; align-items: center; text-align: left; }
+.creator img { width: 46px; height: 46px; border-radius: 50%; }
+.creator strong { display: block; font-size: 12px; }
+.creator span { display: block; font-size: 10px; color: var(--muted); }
+.philosophy-stars { display: block; margin-top: 13px; font-size: 12px; letter-spacing: 4px; color: #ab7900; }
+@media (max-width: 1000px) { .solution-image { height: 180px; } .solution-body { padding: 23px 19px; } .solutions-grid { gap: 18px; } }
+@media (max-width: 800px) { .service-card { padding: 21px; gap: 13px; } .solution-image { height: 150px; } .solution-body { padding: 21px 17px; } .solution-body h3 { font-size: 18px; } .solution-body .check-list { font-size: 10px; } }
+@media (max-width: 600px) { .services-grid, .solutions-grid, .process-grid { grid-template-columns: 1fr; gap: 16px; } .service-card { padding: 25px; } .solution-image { height: 230px; } .solution-body { padding: 27px 25px; } .solution-body .check-list { font-size: 12px; } .process-card { padding: 29px; } .philosophy blockquote { font-size: 15px; margin-inline: 0; } }
+
+.creator-avatar { width: 46px; height: 46px; border-radius: 50%; background: #edf0fa; color: #252c3e; display: grid !important; place-items: center; font-size: 20px !important; font-weight: 700; }
+.process-section { background: radial-gradient(ellipse at top right, #49566b, #1b2232); }

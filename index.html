@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#252c3e">
+  <meta name="description" content="서울에서 활동하는 1994년생 바이브코딩 제작자 전용건의 포트폴리오. 웹사이트 제작, 업무 자동화, 서비스 시제품을 소개합니다.">
+  <title>전용건 | 아이디어를 현실로 만드는 바이브코딩</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/about.css">
+  <link rel="stylesheet" href="css/components/projects.css">
+  <link rel="stylesheet" href="css/components/services.css">
+  <link rel="stylesheet" href="css/components/notes.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/icons.js" defer></script>
+  <script src="js/components/header.js" defer></script>
+  <script src="js/components/hero.js" defer></script>
+  <script src="js/components/about.js" defer></script>
+  <script src="js/components/projects.js" defer></script>
+  <script src="js/components/services.js" defer></script>
+  <script src="js/components/notes.js" defer></script>
+  <script src="js/components/footer.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div id="header-root"></div>
+  <main id="main">
+    <div id="hero-root"></div><div id="about-root"></div><div id="projects-root"></div><div id="services-root"></div><div id="notes-root"></div>
+  </main>
+  <div id="footer-root"></div>
+  <dialog id="contact-dialog" aria-labelledby="contact-title">
+    <button class="dialog-close" aria-label="닫기" type="button">×</button>
+    <span class="eyebrow">새로운 시작을 함께 이야기해요</span>
+    <h2 id="contact-title">어떤 아이디어가 있으신가요?</h2>
+    <p>만들고 싶은 웹사이트나 도구, 해결하고 싶은 불편을 들려주세요.</p>
+    <form id="contact-form">
+      <label for="contact-name">성함</label>
+      <input id="contact-name" name="name" autocomplete="name" placeholder="홍길동" required>
+      <label for="contact-email">이메일 주소</label>
+      <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="이메일 주소를 입력해주세요" required>
+      <label for="contact-message">프로젝트 이야기</label>
+      <textarea id="contact-message" name="message" rows="3" placeholder="필요한 기능, 작업 일정, 참고하고 싶은 서비스 등을 자유롭게 적어주세요." required></textarea>
+      <p class="form-note">미리보기 폼입니다. 작성 내용은 전송되거나 저장되지 않습니다.</p>
+      <button class="button button-yellow" type="submit">입력 내용 확인하기 <span aria-hidden="true">↗</span></button>
+      <p id="form-status" role="status" hidden></p>
+    </form>
+  </dialog>
+  <dialog id="article-dialog" aria-labelledby="article-title">
+    <button class="dialog-close" aria-label="닫기" type="button">×</button>
+    <div id="article-content"></div>
+  </dialog>
+</body>
+</html>
